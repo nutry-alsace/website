@@ -26,14 +26,14 @@ body {
 
 .canette_descri:nth-child(odd){
     transform: unset;
-    width: 320px;
-    min-height: 300px;
+    width: 305.033px;
+    height: auto;
 }
 
 .canette_descri:nth-child(even){
     transform: unset;
-    width: 320px;
-    min-height: 300px;
+    width: 305.033px;
+    height: auto;
  }
 
 .carre {
@@ -41,12 +41,13 @@ body {
 }
 
 .canette_descri {
-    max-width: 320px;
+    max-width: 350px;
 }
 
 img {
-    width: 100px;
+    width: 65px;
     height: auto;
+    cursor: pointer;
 }
 
 .carre_intern {

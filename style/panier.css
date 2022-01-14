@@ -113,6 +113,10 @@ main>h1 {
 
 }
 
+.moins, .plus {
+    cursor: pointer;
+}
+
 .moins {
     margin-left: 0 !important;
 }
@@ -187,6 +191,7 @@ main>h1 {
     display: none;
 }
 
+
 .payement>div>div, #total_payement {
     display: flex;
     justify-content: space-evenly;
@@ -240,6 +245,7 @@ main>h1 {
     color: var(--white);
     width: 45%;
     background-color: transparent;
+    cursor: pointer;
 }
 
 
@@ -252,6 +258,7 @@ main>h1 {
     font-size: 1em;
     font-family: 'Neue-Haas-bold';
     text-transform: uppercase;
+    cursor: pointer;
 }
 
 #resultat {

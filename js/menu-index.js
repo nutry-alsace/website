@@ -5,11 +5,8 @@ document.querySelector(".eclair").addEventListener("click", function () {
 })
 
 
-
-document.querySelector('.close_cross').addEventListener('click', function() {
+document.querySelector('.close_cross-index').addEventListener('click', function() {
     document.querySelector(".menu").classList.toggle("menu_show");
-    document.body.style.overflow = 'auto';
+    document.body.style.overflow = 'hidden';
 })
-
-
 

@@ -98,13 +98,21 @@ header {
     padding-left: 2px;
     padding: 15px;
     align-items: center;
+    position: relative;
+    z-index: 5;
 
+}
+
+header>a>svg {
+    width: 100px;
+    height: auto;
 }
 
 header>svg {
     width: 100px;
     height: auto;
 }
+
 
 
 .links {
@@ -123,6 +131,7 @@ header>svg {
     transform: translateX(-5px);
     transition: 1s;
     z-index: 3;
+    cursor: pointer;
 
 }
 
@@ -185,7 +194,7 @@ footer>#image{
     left: 0;
     height: 100%;
     transition: 1s;
-    z-index: 10;
+    z-index: 30;
 }
 
 .menu_show {
@@ -200,6 +209,15 @@ footer>#image{
     z-index: 3;
     text-decoration: none;
     display: block
+}
+
+.menu>svg {
+    position: relative;
+    z-index: 10;
+}
+
+.close_cross {
+    cursor: pointer;
 }
 
 

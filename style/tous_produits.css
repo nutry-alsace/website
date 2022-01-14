@@ -1,9 +1,14 @@
+
+main {
+    padding-bottom: 100px;
+}
+
 .produit_center{
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
-   
+
 }
 
 
@@ -16,7 +21,7 @@
 }
 
 .canette_descri {
-    max-width: 180px;
+    max-width: 200px;
 }
 
 .canette_descri:nth-child(1){
@@ -34,14 +39,14 @@
 
 
 .canette_descri:nth-child(odd){
-    width: 200px;
-    min-height: 200px;
+    width: 160px;
+    min-height: 160px;
     transform: translateY(-40px);
 }
 
 .canette_descri:nth-child(even){
-   width: 200px;
-   min-height: 200px;
+   width: 160px;
+   min-height: 160px;
    transform: translateY(40px);
 }
 
@@ -76,6 +81,6 @@ span{
 }
 
 img {
-    width: 50px;
+    width: 30px;
     height: auto;
 }

@@ -61,3 +61,56 @@ h1{
     margin-left: auto;
     text-align: justify
 }
+
+
+.bas_options {
+    display: flex !important;
+    justify-content: space-between;
+    color: var(--dark_blue);
+    margin: 100px 0 200px 0;
+}
+
+.bas_options>div>div>a {
+    text-decoration: none;
+    font-size: 1.75em;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-family: 'Neue-Haas-bold';
+    color: var(--dark_blue);
+}
+
+.bas_options>div {
+    width: 50%;
+}
+
+.bas_options>div:nth-child(2) {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+
+.bas_options>div:nth-child(1) {
+    display: flex;
+    justify-content: center;
+} 
+
+
+.bas_options>div:nth-child(2) {
+    justify-content: space-between;
+}
+
+
+
+#bouton_acheter {
+    font-size: 1.5em;
+    height: 200px;
+    width: 200px;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Neue-Haas-medium';
+    line-height: 200px;
+    border-radius: 100%;
+    background-color: var(--dark_blue);
+    color: var(--white);
+}

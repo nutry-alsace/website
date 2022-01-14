@@ -22,6 +22,16 @@
         animation: canette-apparition-mobile 1s ease-out forwards;
     }
 
+    .bouton_ingredients {
+        left: 5% !important;
+    }
+
+    .bouton_ingredients>p {
+        font-size: 1.5em;
+        margin-left: 20px;
+        display: block;
+    }
+    
         
 }
 

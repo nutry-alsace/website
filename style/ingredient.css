@@ -114,3 +114,8 @@ h1 {
     height: auto;
     width: 80px;
 }
+
+
+.bas_options {
+    display: none;
+}
