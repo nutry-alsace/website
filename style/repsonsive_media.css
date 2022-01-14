@@ -1,0 +1,24 @@
+main {
+    width: 100%;
+    display: grid;
+    place-content: center;
+    min-height: 700px;
+}
+.video {
+    width: 40%;
+    height: 400px;
+    background-color: red;
+    margin: 100px auto 300px auto;
+
+}
+
+.video>video {
+    width: 100%;
+    height: auto;
+}
+
+.video>p {
+    text-align:center;
+    font-size: 1.5em;
+    margin-bottom: 200px;
+}

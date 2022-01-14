@@ -1,0 +1,81 @@
+body {
+    overflow: auto;
+}
+
+
+main {
+    padding: 20px;
+}
+h1{
+    font-family: 'Neue-Haas-bold';
+    font-size: 2em;
+    text-align: center;
+    color: #050227;
+    border-bottom: 1px solid #050227;
+    padding-bottom: 30px;
+}
+
+.texte {
+    padding: 40px 0px;
+    color: #050227;
+    font-family: 'Platform-light';
+    line-height: 1.3;
+    font-size: 1em;
+    text-align: justify;
+}
+
+#deux {
+    padding-top: 40px;
+}
+.gens_container>.gens:nth-child(3){
+    border-bottom: 1px solid #050227;
+}
+
+.gens {
+    display: grid;
+    border-top: 1px solid #050227;
+    grid-template-columns: 100px 1fr;
+    padding: 20px 0px;
+}
+
+
+
+.image {
+    width: 80px;
+    height: 80px;
+}
+
+
+.image>img {
+    max-width: 100%;
+    height: auto;
+}
+
+.presentation {
+   display: grid;
+   grid-template-columns: auto;
+   grid-template-rows: 20px;
+}
+
+.nom {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nom {
+    font-weight: bolder;
+    font-family: 'Neue-Haas-bold';
+    font-size: 1.2em;
+}
+
+.job {
+    margin: auto;
+    padding: 10px 10px 10px 15px;
+    line-height: 1.2;
+    font-size: 1em;
+    text-align: left;
+}
+
+
+

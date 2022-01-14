@@ -1,0 +1,17 @@
+header {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    place-content: left;
+    width: 100%;
+    padding: 15px 25px;
+}
+
+.links {
+    display: block;
+}
+
+
+footer {
+    font-size: 1.2em;
+    padding: 10px 20px;
+}

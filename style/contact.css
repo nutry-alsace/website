@@ -1,0 +1,121 @@
+body {
+    width: 100%;
+    padding: 0;
+    overflow: auto;
+}
+
+
+.top_container {
+    width: 94%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.top_container>h1 {
+    font-size: 2.5em;
+    font-family: 'Neue-Haas-bold';
+    text-transform: uppercase;
+    text-align: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--dark_blue);
+    color: var(--dark_blue);
+    margin-bottom: 20px;
+
+  
+}
+
+.top_container>div {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 10px;
+}
+
+.top_container>div>p {
+    width: 50%;
+    color: var(--dark_blue);
+    padding-bottom: 15px;
+}
+
+.top_container>div>p:nth-child(odd) {
+    font-family: 'Platform-light';
+    font-weight: bold;
+} 
+
+
+.top_container>div>p:nth-child(even) {
+    font-size: 1em;
+    font-family: 'Neue-Haas-bold';
+    text-transform: uppercase;
+    border-bottom: 1px var(--dark_blue) solid;
+    line-height: 92%;
+}
+
+/* /////////////// */
+/* Partie leaflet */
+/* //////////// */
+
+
+#map { 
+    height: 300px; 
+    width: 90%;
+    margin: 0 auto 20px auto;
+    position: relative;
+    z-index: 8;
+}
+
+
+
+/* ///////////// */
+/* Partie Form */
+/* ///////// */
+
+
+form {
+    width: 50%;
+    margin-left: auto;
+    padding: 10px;
+    color: var(--dark_blue);
+    font-family: 'Neue-Haas-regular';
+
+}
+
+form>input {
+    background-color: var(--white);
+    margin: 10px 0;
+    max-width: 100%;
+    
+}
+
+form>p {
+    font-size: 1.2em;
+    text-transform: uppercase;
+    font-family: 'Neue-Haas-bold';
+    
+}
+
+form>input[type = text] {
+    border: none;
+    border-bottom: 2px var(--dark_blue) solid;
+    font-size: 2em;
+}
+
+form>textarea {
+    border: none;
+    border-bottom: 2px var(--dark_blue) solid;
+    width: 95%;
+    background-color: var(--white);
+    font-size: 2em;
+}
+
+form>input[type = submit] {
+    font-family: 'Platform-light';
+    background-color: var(--dark_blue);
+    border: none;
+    padding: 7px 12px;
+    color: var(--white);
+}
+
+.bas_options {
+    display: none;
+}

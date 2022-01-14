@@ -1,0 +1,80 @@
+
+main>h1 {
+    font-size: 3.8em;
+    border-bottom: none !important;
+}
+
+
+.bloc_panier {
+    align-items: center;
+    width: 60% !important;
+    margin: 0 auto;
+}
+
+
+.panier_info {
+    display: flex;
+    justify-content: space-between;
+    width: 80% !important;
+}
+
+.panier_info>h1 {
+    font-size: 1.5em !important;
+}
+.panier_action{
+    display: flex;
+    flex-direction: column !important;
+}
+
+.total {
+    width: 50%;
+    margin: 50px auto;
+}
+
+.total>p {
+    font-size: 2em !important;
+}
+
+.bas_panier>.bouton_payement>button {
+    font-size: 2em !important;
+    padding: 25px 60px !important;
+    margin: 100px auto !important;
+}
+
+
+
+
+.payement>div{
+    width: 50%;
+    margin: 0 auto;
+
+}
+
+#total_payement {
+    padding: 0 100px;
+}
+
+.payement>div>div>p:nth-child(odd), #total_payement>p:nth-child(odd) {
+    font-size: 1.7em !important;
+}
+
+.payement>div>div>p:nth-child(even),#total_payement>p:nth-child(even) {
+    font-size: 1.7em !important;
+}
+
+.payement_action {
+    width: 40%;
+}
+
+.payement_action>div>select, .payement_action>div>button {
+    font-size: 1.5em;
+}
+
+.valide {
+    font-size: 1.4em !important;
+}
+
+#resultat {
+    font-size: 1.8em !important;
+    width: 100% !important;
+}

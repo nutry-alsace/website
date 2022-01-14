@@ -1,0 +1,38 @@
+
+body{
+    overflow: auto;
+}
+
+main {
+    width: 100%;
+    display: grid;
+    place-content: center;
+    min-height: 700px;
+}
+.video {
+    width: 90%;
+    height: 400px;
+    margin: 100px auto 300px auto;
+
+}
+
+.video>video {
+    width: 100%;
+    height: auto;
+}
+
+.video>p {
+    text-align:center;
+    font-family: 'Neue-Haas-medium';
+    text-transform: uppercase;
+    font-size: 0.9em;
+    margin-top: 50px;
+    
+}
+
+.video>p>a {
+    text-decoration: none;
+    color: var(--dark_blue);
+    font-family: 'Neue-Haas-bold';
+
+}

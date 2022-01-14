@@ -1,0 +1,265 @@
+body {
+    overflow: auto;
+}
+
+
+main {
+    width: 100%;
+}
+
+
+main>h1 {
+    text-align: center;
+    padding: 10px 0px 20px 0px;
+    border-bottom: 1px var(--dark_blue) solid;
+    color: var(--dark_blue);
+    font-family: 'Neue-Haas-bold';
+    text-transform: uppercase;
+    width: 95%;
+    margin: 20px auto 20px auto;
+}
+
+.panier_container {
+    width: 90%;
+    margin: 0 auto;
+    z-index: 1;
+
+    max-height: 150px;
+
+}
+
+
+
+
+/* /////////////////// */
+/* Style des produits */
+/* ///////////////// */
+
+
+.panier_img {
+    height: 150px;
+    width: 150px;
+    overflow: hidden;
+    padding-top: 50px;
+    position: relative;
+}
+
+.panier_img>img {
+    width: 50%;
+    margin: 0 auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    z-index:5
+}
+
+
+
+.fond {
+    position: absolute;
+    top: 50px;
+    left: 48%;
+    transform: translateX(-50%);
+    z-index: 1;
+    width: 60%;
+    background-color: chartreuse;
+    height: 60%;
+    border-radius: 100%;
+    filter: blur(1em) opacity(0.75);;
+
+}
+
+.bloc_panier {
+    display: flex;
+    padding: 10px;
+    border-bottom: 1px solid var(--dark_blue);
+    justify-content: space-between;
+    padding-bottom: 0;
+    margin-bottom: 30px;
+}
+
+.panier_info {
+    width: 60%;
+    align-items: center;
+    padding-top: 40px;
+}
+
+.panier_info>h1 {
+    font-size: 1em;
+    font-family: 'Neue-Haas-bold';
+    padding: 15px 0;
+    text-transform: uppercase;
+
+}
+
+.panier_action {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 1.2em; 
+    align-items: center;
+    
+
+}
+
+.panier_action * {
+    font-family: 'Platform-regular';
+    font-size: 1.2em;
+}
+
+.panier_action>div:nth-child(1) * {
+    margin: 0 10px;
+
+}
+
+.moins {
+    margin-left: 0 !important;
+}
+
+.bas_panier {
+    width: 90%;
+    margin: 30px auto;
+    padding: 0 30px;
+}
+
+.total {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.total>p:nth-child(1) {
+    font-family: 'Neue-Haas-bold';
+    text-transform: uppercase;
+    font-size: 1.2em;
+}
+
+.total>p:nth-child(2) {
+    font-family: 'Platform-regular';
+    font-size: 1.4em;
+
+}
+
+
+.bas_panier>.bouton_payement {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.bas_panier>.bouton_payement>button {
+    /* display: inline-block; */
+    margin: 80px auto 30px auto;
+    text-align: center;
+    padding: 15px 30px;
+    border: 1px solid var(--dark_blue);
+    font-family: 'Platform-regular';
+    font-size: 1.3em;
+    background-color: var(--white);
+    transition: 0.4s;
+
+}
+
+.bas_panier>.bouton_payement>button:hover {
+    border-color: transparent;
+    color: var(--white);
+    background-color: var(--dark_blue);
+    cursor: pointer;
+}
+
+
+
+/* /////////////////// */
+/* Menu qui apparait  */
+/* //////////////// */
+
+.payement {
+    position: absolute;
+    width: 100%;
+    background-color: var(--dark_blue);
+    color: var(--white);
+    top: 0;
+    text-align: center;
+    padding-top: 300px;
+    height: 100%;
+    z-index: 10;
+    display: none;
+}
+
+.payement>div>div, #total_payement {
+    display: flex;
+    justify-content: space-evenly;
+    border-bottom: 2px solid var(--white);
+    width: 80%;
+    margin: 20px auto;
+    padding-bottom: 20px;
+    align-items: center;
+}
+
+.payement>div>div:last-child {
+    width: 90%;
+}
+
+#total_payement {
+    border: none;
+
+}
+
+
+
+.payement_action>*  {
+    border-bottom: none !important;
+    margin: 5px auto;
+}
+
+.payement>div>div>p:nth-child(odd), #total_payement>p:nth-child(odd) {
+    font-family: 'Platform-regular';
+    font-size: 1.2em;
+}
+
+.payement>div>div>p:nth-child(even),#total_payement>p:nth-child(even) {
+    font-family: 'Neue-Haas-bold';
+    font-size: 1.2em;
+}
+
+.payement_action>div {
+    width: 70% !important;
+    margin: 10px auto 0 auto !important;
+    display: flex;
+    align-items: center;
+    justify-content: space-between !important;
+    padding-bottom: 0px !important;
+}
+
+
+.payement_action>div>select, .payement_action>div>button  {
+    border: 1px solid var(--white);
+    font-family: 'Platform-regular';
+    padding: 10px 20px;
+    color: var(--white);
+    width: 45%;
+    background-color: transparent;
+}
+
+
+.valide {
+    width: 70%;
+    border: 1px solid var(--dark_blue);
+    padding: 10px 20px;
+    background-color: var(--white);
+    color: var(--dark_blue);
+    font-size: 1em;
+    font-family: 'Neue-Haas-bold';
+    text-transform: uppercase;
+}
+
+#resultat {
+    font-size: 1.35em;
+    margin-top: 50px;
+    width: 80%;
+}
+
+.payement_action>svg {
+    margin-top: 20px;
+}

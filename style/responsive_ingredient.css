@@ -1,0 +1,63 @@
+body {
+    overflow: unset;
+}
+
+h1{
+    font-size: 4em;
+}
+
+#premier{
+    width: 56%;
+    font-size: 2.5em;
+}
+
+.canette_dimension{
+    grid-template-columns: 100px 150px 100px;
+}
+
+#one {
+    padding-top:10px ;
+    width: 300%;
+}
+
+#two{
+    padding-top: 100px;
+    width: 300%;
+}
+
+#three{
+    padding-top: 90px;
+    width: 200%;
+    padding-left: 28px;
+}
+
+#four{
+    padding-top: 80px;
+    width: 200%;
+    padding-left: 95px;
+}
+
+#texte {
+    font-size: 1.3em;
+
+}
+
+.colone1{
+    transform: translateX(-100px);
+}
+
+.decalageG {
+    padding-left: unset;
+}
+
+#deuxieme{
+    font-size: 3em;
+    padding-left: 130px;
+}
+
+#troisieme{
+    font-size: 1.4em;
+    width: 51%;
+    margin-left: auto;
+    text-align: justify
+}

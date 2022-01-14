@@ -1,0 +1,58 @@
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.gauche, .droite {
+    width: 45%;
+    margin-top: 100px;
+}
+
+.droite {
+    margin-bottom: 100px;
+}
+
+.choix_quantite {
+    display: flex;
+    justify-content: start;
+}
+.gauche {
+    margin-top: 50px;
+}
+
+.img_canette {
+    width: 500px;
+}
+
+
+.droite>div>h2 {
+    font-size: 3em;
+}
+
+
+.droite>div>h2+p {
+    font-weight: bold;
+    font-size: 2.3em;
+}
+
+
+.canette_container {
+    position: relative;
+}
+
+.canette_container>div:nth-child(1) {
+    left: 25%;
+    top: 48%;
+    z-index: 7;
+}
+
+.canette_container>div:nth-child(3) {
+    left: 73%;
+    top: 48%;
+    z-index: 5;
+}
+
+.bouton {
+    display: block;
+}

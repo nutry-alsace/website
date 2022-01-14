@@ -1,0 +1,260 @@
+
+/* /////////////// */
+/* Neue-Haas Typo */
+/* ///////////// */
+
+
+
+@font-face {
+    font-family: 'Neue-Haas-bold';
+    src: url(../font/NeueHaasUnica/NeueHaasUnica-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'Neue-Haas-light';
+    src: url(../font/NeueHaasUnica/NeueHaasUnica-Light.ttf);
+}
+
+@font-face {
+    font-family: 'Neue-Haas-medium' ;
+    src: url(../font/NeueHaasUnica/NeueHaasUnica-Medium.ttf);
+}
+
+@font-face {
+    font-family: 'Neue-Haas-regular';
+    src: url(../font/NeueHaasUnica/NeueHaasUnica-Regular.ttf);
+}
+
+
+
+/* /////////////// */
+/* Platform  Typo */
+/* ///////////// */
+
+
+
+@font-face {
+    font-family: 'Platform-medium';
+    src: url(../font/PLATFORM/Platform-Medium.ttf);
+}
+
+@font-face {
+    font-family: 'Platform-bold';
+    src: url(../font/PLATFORM/Platform-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'Platform-light';
+    src: url(../font/PLATFORM/Platform-Light.ttf);
+}
+
+@font-face {
+    font-family: 'Platform-regular';
+    src: url(../font/PLATFORM/Platform-Regular.ttf);
+}
+
+
+
+
+/* /////////////////// */
+/* Parametres de base */
+/* ///////////////// */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: arial;
+}
+
+:root {
+    --dark_blue: rgb(5, 2, 39);
+    --azure_blue: rgb(49, 133, 252);
+    --orange: rgb(255, 103, 0);
+    --green: rgb(0, 166, 118);
+    --red: rgb(237, 42, 29);
+    --white: #f4f4f4;
+}
+
+/* ///////////////// */
+/* Style de la page */
+/* /////////////// */
+
+
+body {
+    width: 100%;
+    margin: 0;
+    position: relative;
+    background-color: var(--white);
+    overflow: hidden;
+
+}
+
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 2px;
+    padding: 15px;
+    align-items: center;
+
+}
+
+header>svg {
+    width: 100px;
+    height: auto;
+}
+
+
+.links {
+    margin: 0 20px;
+    font-family: 'Neue-Haas-medium' ;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;
+    display: none;
+
+}
+
+.eclair {
+    width: 20px;
+    transform: translateX(-5px);
+    transition: 1s;
+    z-index: 3;
+
+}
+
+.eclair>img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+
+
+
+/* /////// */
+/* Footer */
+/* //// */
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 10px;
+    font-size: 0.9em;
+    font-weight: bold;
+    padding-top: 20px;
+}
+
+footer>div {
+    font-family: 'Platform-light';
+}
+
+
+footer>#image{
+    height: auto;
+    width: 80px;
+}
+
+
+
+
+
+
+/****************************/
+/********** Menu ************/
+/****************************/
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 10%;
+    min-height: 1000px;
+    width: 100%;
+    background-color: #050227; 
+    position: absolute;
+    display: none;
+    top: 0;
+    left: 0;
+    height: 100%;
+    transition: 1s;
+    z-index: 10;
+}
+
+.menu_show {
+    display: block !important;
+}
+
+.menu>a {
+    color: white;
+    padding: 40px;
+    font-family: 'Neue-Haas-bold';
+    font-size: 2em;
+    z-index: 3;
+    text-decoration: none;
+    display: block
+}
+
+
+
+.retour {
+    opacity: 1; 
+    z-index: 3;
+}
+
+.animation {
+    animation: tourne 1s forwards;
+    transition: 1s;
+}
+
+.animationback {
+    animation: retourne 1s forwards;
+    transition: 1s;
+}
+
+
+/* /////////////// */
+/* Animation */
+/* ///////////// */
+
+@keyframes tourne {
+    0%{
+        transform: rotate(0deg);
+    }
+
+    25%{
+        transform: rotate(25deg);
+    }
+
+    80%{
+        transform: rotate(-80deg);
+    }
+    100%{
+        transform: scale(0deg);
+    }
+}
+
+
+@keyframes retourne {
+    0%{
+        transform: rotate(0deg);
+    }
+
+    25%{
+        transform: rotate(-25deg);
+    }
+
+    80%{
+        transform: rotate(80deg);
+    }
+    100%{
+        transform: scale(0deg);
+    }
+}

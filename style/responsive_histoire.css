@@ -1,0 +1,62 @@
+body {
+    overflow: unset;
+}
+
+
+h1  {
+font-size: 4em;
+padding: 45px 0px 35px 0px;
+margin: 0px 40px;
+}
+
+.texte {
+    padding-left: 70px;
+    width: 52%;
+    font-size: 1.3em;
+}
+
+
+#haut {
+    border-top: 1px solid #050227;
+    padding: 40px 0px;
+    margin: 0px 40px;
+}
+
+
+#ligne {
+    border-top: 1px solid #050227;
+    margin: 10px 30px;
+}
+
+.gens {
+    border: unset;
+    padding: 40px 0px;
+    grid-template-columns: 200px 1fr;
+}
+
+.nom {
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.gens_container {
+    margin: 20px 180px;
+}
+
+.gens_container > .gens:nth-child(3){
+    border:unset;
+}
+
+.image {
+    width: 160px;
+    height: 160px;
+}
+
+.image>img {
+    max-width: 100%;
+    height: auto;
+}
+.presentation {
+    padding-top: 20px;
+    font-size: 1.5em;
+}

@@ -1,0 +1,271 @@
+body {
+    overflow: auto;
+}
+
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+.canette_container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.img_canette {
+    width: 300px;
+    position: relative;
+}
+
+.img_canette>img {
+    max-width: 100%;
+    position: relative;
+    height: auto;
+    z-index: 5;
+}
+
+.fond {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    z-index: 1;
+    border-radius: 100%;
+    filter: blur(4em) opacity(0.5);
+    transform: scale(0.7, 0.7);
+    
+}
+
+
+
+
+
+/* /////////// */
+/* CAS ORANGE */
+/* ///////// */
+
+
+.orange>.gauche>.canette_container>.img_canette>.fond {
+    background-color: var(--orange);
+}
+
+.orange>.droite>div>h2+p {
+    color: var(--orange);
+}
+
+.orange>.droite>.bouton>a {
+    border: 1px solid var(--orange);
+}
+
+.orange>.droite>.bouton>a:hover {
+    border-color: transparent;
+    background-color: var(--orange);
+    color: var(--white);
+}
+
+/* /////////// */
+/* CAS VERT */
+/* ///////// */
+
+.vert>.gauche>.canette_container>.img_canette>.fond {
+    background-color: var(--green);
+}
+
+.vert>.droite>div>h2+p {
+    color: var(--green);
+}
+
+.vert>.droite>.bouton>a {
+    border: 1px solid var(--green);
+}
+
+.vert>.droite>.bouton>a:hover {
+    border-color: transparent;
+    background-color: var(--green);
+    color: var(--white);
+}
+
+/* /////////// */
+/* CAS ROUGE */
+/* ///////// */
+
+.rouge>.gauche>.canette_container>.img_canette>.fond {
+    background-color: var(--red);
+}
+
+.rouge>.droite>div>h2+p {
+    color: var(--red);
+}
+
+.rouge>.droite>.bouton>a {
+    border: 1px solid var(--red);
+}
+
+.rouge>.droite>.bouton>a:hover {
+    border-color: transparent;
+    background-color: var(--red);
+    color: var(--white);
+}
+
+
+
+
+/* /////////// */
+/* CAS BLEU */
+/* ///////// */
+
+.bleu>.gauche>.canette_container>.img_canette>.fond {
+    background-color: var(--azure_blue);
+}
+
+.bleu>.droite>div>h2+p {
+    color: var(--azure_blue);
+}
+
+.bleu>.droite>.bouton>a {
+    border: 1px solid var(--azure_blue);
+}
+
+.bleu>.droite>.bouton>a:hover {
+    border-color: transparent;
+    background-color: var(--azure_blue);
+    color: var(--white);
+}
+
+
+
+
+
+.canette_container {
+    position: relative;
+}
+
+
+
+
+.canette_container>div:nth-child(1) {
+    left: 25%;
+    top: 48%;
+    z-index: 7;
+}
+
+.canette_container>div:nth-child(3) {
+    left: 73%;
+    top: 48%;
+    z-index: 5;
+}
+
+.bi-arrow {
+    transform: scale(1.5, 1.5);
+}
+
+.canette_container>div:nth-child(1), .canette_container>div:nth-child(3) {
+    position: absolute;
+}
+
+.choix {
+    width: 50%;
+    margin: 10px auto;
+    display: flex;
+    justify-content: center;
+
+}
+.unite, .carton {
+    height: 75px; 
+    width: 75px;
+    border-radius: 20px;
+}
+
+.unite>img, .carton>img {
+    max-width: 100%;
+    height: auto;
+
+    
+}
+
+
+
+.droite {
+    padding: 20px;
+    width: 100%;
+}
+
+.droite>div>h2 {
+    font-size: 1.8em;
+    font-family: 'Neue-Haas-bold';
+    text-transform: uppercase;
+}
+
+.droite>div>h2+p {
+    font-size: 2em;
+    font-family: 'Platform-light';
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+
+.droite>div:nth-child(2)>p:nth-child(1) {
+    font-size: 1.5em;
+    font-family: 'Neue-Haas-bold';
+}
+
+.droite>div:nth-child(2)>:nth-child(2) {
+    font-size: 1.2em;
+    font-family: 'Platform-medium';
+    line-height: 110%;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+    font-weight: lighter;
+}
+
+.choix_quantite {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: none;
+    margin: 40px 0;
+}
+
+.choix_quantite>p {
+    height: 75px;
+    width: 75px;
+    border: 1px solid var(--dark_blue);
+    color: var(--dark_blue);
+    line-height: 70px;
+    text-align: center;
+    border-radius: 100%;
+    margin: 30px 0;
+    font-family: 'Neue-Haas-medium';
+    font-size: 1.75em; 
+    transition: 0.4s;
+    
+}
+
+
+.selected {
+    background-color: var(--dark_blue);
+    color: var(--white) !important;
+}
+
+.choix_quantite>p:nth-child(1) {
+    margin-right: 100px;
+}
+
+.bouton {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.bouton>a {
+    padding: 20px 30px;
+    color: var(--dark_blue);
+    background-color: var(--white);
+    font-size: 1.5em;
+    font-family: 'Platform-Medium';
+    margin: 0 auto;
+    transition: 0.4s;
+    text-decoration: none;
+
+}

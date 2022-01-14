@@ -1,0 +1,116 @@
+body {
+    overflow: auto;
+}
+
+main {
+    padding: 10px;
+}
+
+h1 {
+    text-align: center;
+    padding: 10px 0px 20px 0px;
+    border-bottom: 1px solid var(--dark_blue);
+    color: var(--dark_blue);
+}
+
+#premier {
+    padding: 30px 5px 40px 5px;
+    text-align: left;
+    font-family: "Neue-Haas-bold";
+    line-height: 92%;
+    text-transform: uppercase;
+    font-size: 1.15em;
+    color: var(--dark_blue);
+}
+
+
+/* A partir d'ici c'est que du code pour la canette, have fun si tu veux l'améliorer */
+
+.canette_flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+}
+
+
+
+.canette_dimension {
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+}
+
+#texte {
+    font-size: 0.8em;
+    color: var(--dark_blue);
+    padding: 10px 0px;
+    font-family: "Neue-Haas-bold";
+    text-transform: uppercase;
+    line-height: 1;
+    text-align: left;
+}
+
+#one{
+    border-bottom: 1px solid #020527;
+}
+
+#two {
+    padding-top: 70px;
+    border-bottom: 1px solid #020527;
+}
+    
+
+#three{
+    padding-top: 45px;
+    width: 110%;
+    border-bottom: 1px solid #020527;
+}
+
+#four{
+    padding-top: 60px;
+    border-bottom: 1px solid #020527;
+    text-align: end;
+    font-weight: bolder;
+}
+
+.decalageG {
+    padding-left: 30px;
+}
+
+#exception {
+    padding-left: 10px;
+}
+
+.contenueDeMerde {
+    z-index: 1;
+}
+
+.contenueDeMerde>img {
+    max-width: 100%;
+    height: auto;
+}
+/* Et la c'est ENFIN fini */
+
+#deuxieme {
+    color: var(--dark_blue);
+    font-size: 2em;
+    text-align: left;
+    font-family: "Neue-Haas-bold";
+    line-height: 1;
+    padding-top: 40px;
+    padding-bottom: 50px;
+    text-transform: uppercase;
+}
+
+#troisieme {
+    font-size: 1em;
+    color: var(--dark_blue);
+    line-height: 1.3;
+    font-family: "Platform-regular";
+    padding: 15px 0px
+}
+
+#image {
+    height: auto;
+    width: 80px;
+}
